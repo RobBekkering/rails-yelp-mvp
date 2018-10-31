@@ -1,0 +1,9 @@
+<h1>New</h1>
+
+<%= simple_form_for @restaurant do |r| %>
+  <%= r.input :name, placeholder: 'Name' %>
+  <%= r.input :address, placeholder: 'Address' %>
+  <%= r.input :phone_number, placeholder: 'Phone number' %>
+  <%= r.input :category, placeholder: 'Category', collection: %w(chinese italian japanese french belgian) %>
+  <%= r.button :submit %>
+<% end %>
